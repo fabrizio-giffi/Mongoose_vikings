@@ -2,16 +2,7 @@
 const VikingModel = require("./models/User.js")
 
 //This line of code connects to the Database
-// require("./db");
-const mongoose = require("mongoose");
-mongoose
-  .connect("mongodb://127.0.0.1/valhalla", { family: 4 })
-  .then(() => {
-    console.log(`Connected to Mongo! Welcome to Valhalla!  🪓🛡️☠️`);
-  })
-  .catch((err) => {
-    console.error("Error connecting to DB", err);
-  });
+require("./db");
 
 //Iteration 2:
 
